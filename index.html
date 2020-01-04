@@ -1,12 +1,14 @@
 <html lang="vi">
 
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hiệu ứng CSS 3D</title>
-    <meta name="description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5 và CSS3" />
+    <title>3D slideshow Image</title>
+    <meta name="description" content="3D slideshow Image" />
     <meta property="og:description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5 và CSS3" />
     <meta property="og:image" content="icon.png" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" charset="utf-8">
         function hasClassName(inElement, inClassName) {
             var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
@@ -102,41 +104,46 @@
 </head>
 
 <body onload="timedCount()">
-    <div class="panel">
-        <div class="audio"><audio id="player" controls autoplay preload="none"><source src="https://redirect.nhq.vn/demo/audio/Girls_Like_You.mp3" type="audio/mpeg"></audio></div>
-        <div class="author"><button onclick="downloadLink()">&copy;LongBody</button></div>
-        <div class="clear"></div>
-    </div>
-    <div id="container">
-        <div id="stage">
-            <div id="shape" class="cube backfaces">
-                <div class="plane one"></div>
-                <div class="plane two"></div>
-                <div class="plane three"></div>
-                <div class="plane four"></div>
-                <div class="plane five"></div>
-                <div class="plane six"></div>
-                <div class="plane seven"></div>
-                <div class="plane eight"></div>
-                <div class="plane nine"></div>
-                <div class="plane ten"></div>
-                <div class="plane eleven"></div>
-                <div class="plane twelve"></div>
+    <div class="col-lg-12">
+        <div class="panel">
+            <div class="audio"><audio id="player" controls autoplay preload="none"><source src="https://redirect.nhq.vn/demo/audio/Girls_Like_You.mp3" type="audio/mpeg"></audio></div>
+            <div class="author"><button onclick="downloadLink()">&copy;LongBody</button></div>
+            <div class="clear"></div>
+        </div>
+        <div id="container">
+            <div id="stage">
+                <div id="shape" class="cube backfaces">
+                    <div class="plane one"></div>
+                    <div class="plane two"></div>
+                    <div class="plane three"></div>
+                    <div class="plane four"></div>
+                    <div class="plane five"></div>
+                    <div class="plane six"></div>
+                    <div class="plane seven"></div>
+                    <div class="plane eight"></div>
+                    <div class="plane nine"></div>
+                    <div class="plane ten"></div>
+                    <div class="plane eleven"></div>
+                    <div class="plane twelve"></div>
+                </div>
             </div>
         </div>
     </div>
+
     <script type="text/javascript">
         var audios = [
             "https://redirect.nhq.vn/demo/audio/That_Girl.mp3",
-            "https://redirect.nhq.vn/demo/audio/Im_Yours.mp3",
-            "https://redirect.nhq.vn/demo/audio/My_Girl.mp3",
-            "https://redirect.nhq.vn/demo/audio/Girls_Like_You.mp3",
-            "https://redirect.nhq.vn/demo/audio/There_For_You.mp3",
-            "https://redirect.nhq.vn/demo/audio/What_Makes_You_Beautiful.mp3",
-            "https://redirect.nhq.vn/demo/audio/I_Do.mp3",
+            "http://k007.kiwi6.com/hotlink/hazw1ugguz/I_Took_A_Pill_In_Ibiza_Seeb_Remix_-_Mik.mp3",
+            "http://k007.kiwi6.com/hotlink/hazw1ugguz/I_Took_A_Pill_In_Ibiza_Seeb_Remix_-_Mik.mp3",
+            "http://k007.kiwi6.com/hotlink/1cwfx54f4y/Firestone_-_Kygo_Conrad.mp3",
+            "http://k007.kiwi6.com/hotlink/el5l3hy77i/y2mate.com_-_cc_mBKXARJlhbc.mp3",
+            "http://k007.kiwi6.com/hotlink/7gloy2eefo/Song_Gio_-_Jack_SjlkChiTruong_-_Jack.mp3",
+            "http://k007.kiwi6.com/hotlink/n0zvknxlwi/Wait_For_You_-_Elliott_Yamin.mp3",
             "https://redirect.nhq.vn/demo/audio/A_Little_Love.mp3",
             "https://redirect.nhq.vn/demo/audio/Beautiful_In_White.mp3",
-            "https://redirect.nhq.vn/demo/audio/Proud_Of_You.mp3"
+            "http://k007.kiwi6.com/hotlink/2bnkf5n9l9/There_For_You.mp3",
+            "https://soundcloud.com/duong-nguy/mong-phon-hoa-hoang-linh-phu-dao-ost",
+
         ];
 
         var music = document.getElementById("player");
@@ -162,6 +169,9 @@
         var firstPreload = new Image();
         firstPreload.src = "css/bg/2.jpg";
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <!--// https://www.facebook.com/nhquyet //-->
 </body>
 
