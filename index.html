@@ -69,22 +69,7 @@
             } else {
                 count = count + 1;
             }
-            if (next_bg >= 15) {
-                num_bg = num_bg + 1;
-                if (num_bg > 10) {
-                    num_bg = 1;
-                }
-                document.body.style.backgroundImage = "url(css/bg/" + num_bg + ".jpg)";
-                preLoadbg = new Image();
-                if (num_bg == 10) {
-                    preLoadbg.src = "css/bg/1.jpg";
-                } else {
-                    preLoadbg.src = "css/bg/" + (num_bg + 1) + ".jpg";
-                }
-                next_bg = 0;
-            } else {
-                next_bg = next_bg + 1;
-            }
+
             setTimeout(timedCount, 1000);
         }
 
@@ -103,11 +88,11 @@
     <!-- <script type="text/javascript" src="https://redirect.nhq.vn/demo/js/ruoi.js"></script> -->
 </head>
 
-<body onload="timedCount()">
+<body onload="timedCount()" background="bg.jpg">
     <div class="col-lg-12">
         <div class="panel">
-            <div class="audio"><audio id="player" controls autoplay preload="none"><source src="https://redirect.nhq.vn/demo/audio/Girls_Like_You.mp3" type="audio/mpeg"></audio></div>
-            <div class="author"><button onclick="downloadLink()">&copy;LongBody</button></div>
+            <div class="audio"><audio id="player" controls autoplay preload="none"><source src= "http://k007.kiwi6.com/hotlink/hazw1ugguz/I_Took_A_Pill_In_Ibiza_Seeb_Remix_-_Mik.mp3", type="audio/mpeg" ></audio></div>
+            <a class="author" href="https://www.facebook.com/nguyen.yen.3597789"><button onclick="downloadLink()">&copy;NguyenHaiYen</button></a>
             <div class="clear"></div>
         </div>
         <div id="container">
@@ -134,15 +119,14 @@
         var audios = [
             "https://redirect.nhq.vn/demo/audio/That_Girl.mp3",
             "http://k007.kiwi6.com/hotlink/hazw1ugguz/I_Took_A_Pill_In_Ibiza_Seeb_Remix_-_Mik.mp3",
-            "http://k007.kiwi6.com/hotlink/hazw1ugguz/I_Took_A_Pill_In_Ibiza_Seeb_Remix_-_Mik.mp3",
             "http://k007.kiwi6.com/hotlink/1cwfx54f4y/Firestone_-_Kygo_Conrad.mp3",
             "http://k007.kiwi6.com/hotlink/el5l3hy77i/y2mate.com_-_cc_mBKXARJlhbc.mp3",
-            "http://k007.kiwi6.com/hotlink/7gloy2eefo/Song_Gio_-_Jack_SjlkChiTruong_-_Jack.mp3",
-            "http://k007.kiwi6.com/hotlink/n0zvknxlwi/Wait_For_You_-_Elliott_Yamin.mp3",
+            "http://k007.kiwi6.com/hotlink/zndflxkw8x/Vietsub_Lyrics_Everything_I_Need_-_Skylar_Grey_Aquaman_Soundtrack_128_kbps_.mp3",
+            "http://k007.kiwi6.com/hotlink/btcdttu7qs/Nightcore_-_Knees_Lyrics_128_kbps_.mp3",
             "https://redirect.nhq.vn/demo/audio/A_Little_Love.mp3",
             "https://redirect.nhq.vn/demo/audio/Beautiful_In_White.mp3",
             "http://k007.kiwi6.com/hotlink/2bnkf5n9l9/There_For_You.mp3",
-            "https://soundcloud.com/duong-nguy/mong-phon-hoa-hoang-linh-phu-dao-ost",
+            "http://k007.kiwi6.com/hotlink/jlecs8zzpl/We_Don_t_Talk_Anymore_-_Charlie_Puth_Se.mp3",
 
         ];
 
@@ -165,9 +149,6 @@
             music.load();
             music.play();
         });
-
-        var firstPreload = new Image();
-        firstPreload.src = "css/bg/2.jpg";
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
